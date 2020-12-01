@@ -1,0 +1,15 @@
+<div>
+    <img src="../../../assets//images/containerImage.jpg" class="conatinerImage" />
+
+    <div>
+        <div class="text-center mt-5 moviePageTitle">
+            <h4>Top Rated Movies</h4>
+        </div>
+        <div class="cardContainer">
+            <div class="m-5" *ngFor="let item of topRatedMoviesData">
+                <!-- call movie card -->
+                <app-movie-card [data]="item"></app-movie-card>
+            </div>
+        </div>
+    </div>
+</div>

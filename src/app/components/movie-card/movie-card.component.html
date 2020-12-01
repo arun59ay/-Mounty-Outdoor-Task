@@ -1,0 +1,28 @@
+<!-- <div class="card movieCard" style="width: 18rem;">
+    <img src="../../../assets/images/containerImage.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+    </div>
+</div> -->
+
+
+<main class="wrapper">
+    <section class="breweries" id="breweries">
+      <ul class="p-0">
+        <li>
+          <figure>
+            <!-- Photo by Quentin Dr on Unsplash -->
+            <!-- <img src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e" alt="Several hands holding beer glasses"> -->
+            <img src="https://image.tmdb.org/t/p/w185/{{data?.poster_path}}">
+            <figcaption><h3>{{data?.title}}</h3></figcaption>
+          </figure>
+          <p>
+           {{data?.overview}}
+          </p>
+          <!-- <a href="#">Visit Website</a> -->
+        </li>
+      </ul>
+    </section>
+  </main>

@@ -1,0 +1,21 @@
+.headerItems{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    a{
+        color: #fff ;
+        &:hover{
+            text-decoration: underline;
+            color: #ffa500 !important;
+        }
+    }
+}
+
+.header{
+    background: linear-gradient(180deg, rgba(37, 38, 41, 0.24) 26.22%, #27292d05), linear-gradient(0deg, #171544c2, #171544fc) !important;
+}
+
+.active-link{
+    text-decoration: underline;
+    color: #ffa500 !important;  
+}
