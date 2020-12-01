@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { MoviesService } from 'src/app/service/movies.service';
+import { Movies } from 'src/app/utils/common.util';
 
 @Component({
   selector: 'app-upcoming-movies',
@@ -8,7 +9,7 @@ import { MoviesService } from 'src/app/service/movies.service';
   styleUrls: ['./upcoming-movies.component.scss']
 })
 export class UpcomingMoviesComponent implements OnInit {
-  upComingMoviesData: any;
+  upComingMoviesData: Movies[];
 
   constructor(
     private movieS: MoviesService,

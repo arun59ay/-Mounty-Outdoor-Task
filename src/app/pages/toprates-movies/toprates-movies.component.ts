@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { MoviesService } from 'src/app/service/movies.service';
+import { Movies } from 'src/app/utils/common.util';
 
 @Component({
   selector: 'app-toprates-movies',
@@ -9,7 +10,7 @@ import { MoviesService } from 'src/app/service/movies.service';
   styleUrls: ['./toprates-movies.component.scss']
 })
 export class TopratesMoviesComponent implements OnInit {
-  topRatedMoviesData: any;
+  topRatedMoviesData: Movies[];
 
   constructor(
     private movieS: MoviesService,
